@@ -47,6 +47,9 @@ ul {
     list-style: none;
 }
 
+
+/* Nav bar */
+
 .home {
     padding: 2rem;
     display: block;
@@ -71,6 +74,17 @@ ul {
     margin-right: 2rem;
 }
 
+@media (max-screen: 34em) {
+    .nav-list {
+        display: flex;
+        font-size: smaller;
+    }
+    .navbar {
+        justify-content: flex-start;
+        width: 50%;
+    }
+}
+
 .nav-list a {
     display: block;
     font-size: 2.2rem;
@@ -79,6 +93,30 @@ ul {
 
 .nav-list a:hover {
     background: rgb(69, 86, 125);
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+
+/* 980px / 16px = 61.25em */
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+
+/* 460px / 16px = 28.75em */
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
 }
 
 
